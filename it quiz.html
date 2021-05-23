@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tech Blade</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <style>
+ body{
+   background-image: url(https://images.unsplash.com/photo-1515549832467-8783363e19b6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d2hpdGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+   height:100%;
+   background-size: cover;
+  background-repeat: no-repeat;
+ }
+
+.timeline {
+    border-left: 3px solid #727cf5;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(114, 124, 245, 0.09);
+    margin: 0 auto;
+    letter-spacing: 0.2px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    max-width: 40%;
+}
+
+@media (max-width: 767px) {
+    .timeline {
+        max-width: 98%;
+        padding: 25px;
+    }
+}
+
+.timeline .event {
+    border-bottom: 1px dashed #e8ebf1;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .event:before {
+    left: -207px;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+}
+
+
+.timeline .event:after {
+    -webkit-box-shadow: 0 0 0 3px #727cf5;
+    box-shadow: 0 0 0 3px #727cf5;
+    left: -55.8px;
+    background: #fff;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    content: "";
+    top: 5px;
+}
+
+ </style>
+  </head>
+  <body style="background-color: #00e68a;">
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Tech Blade</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="webd.html">Website Designing</a></li>
+      <li><a href="movie making.html">Movie Making</a></li>
+      <li><a href="it quiz.html">IT Quiz</a></li>
+      <li><a href="photo.html">Photography</a></li>
+      <li><a href="prog.html">Programming</a></li>
+      </ul>
+  </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title"></h6>
+                    <div id="content">
+                        <ul class="timeline">
+                            <li class="event" data-date="Name">
+                                <h3>IT Quiz</h3>
+                                <p>A quiz consisting of 3 rounds- General Round,Rapid Fire Round, Final Round.</p>
+                            </li>
+                            <li class="event" data-date="Link To Register">
+                                <h3><a href="#">Itquizregd</a> </h3>
+                            </li>
+                            <li class="event" data-date="General Round">
+                                <h3>The team is given 4 questions and the one with the top 2 fastest response moves ahead. </h3>
+                                <p>Syllabus: IT field </p>
+                            </li>
+                            <li class="event" data-date="Rapid Fire Round">
+                                <h3>Among the members of teams, rapid fire rounds are conducted. The team with highest score moves ahead.</h3>
+                            </li>
+                            <li class="event" data-date="Final Round">
+                                <h3>The members of the team are pitted against each othr among a set of 25 questions. The topmost scorer wins.</h3>
+                            </li>
+                            <li class="event" data-date="Participants">
+                                <h3>Team of 3</h3>
+
+                            </li>
+                            <li class="event" data-date="Date">
+                                <h3>25th May-26th May</h3>
+                            </li>
+                            <li class="event" data-date="Duration">
+                                <h3>4 hours per day</h3>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

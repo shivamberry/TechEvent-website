@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tech Blade</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <style>
+ body{
+   background-image: url(https://images.unsplash.com/photo-1515549832467-8783363e19b6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d2hpdGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+   height:100%;
+   background-size: cover;
+  background-repeat: no-repeat;
+ }
+
+.timeline {
+    border-left: 3px solid #727cf5;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(114, 124, 245, 0.09);
+    margin: 0 auto;
+    letter-spacing: 0.2px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    max-width: 40%;
+}
+
+@media (max-width: 767px) {
+    .timeline {
+        max-width: 98%;
+        padding: 25px;
+    }
+}
+
+.timeline .event {
+    border-bottom: 1px dashed #e8ebf1;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .event:before {
+    left: -207px;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+}
+
+
+.timeline .event:after {
+    -webkit-box-shadow: 0 0 0 3px #727cf5;
+    box-shadow: 0 0 0 3px #727cf5;
+    left: -55.8px;
+    background: #fff;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    content: "";
+    top: 5px;
+}
+
+ </style>
+  </head>
+  <body style="background-color: #00e68a;">
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Tech Blade</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="webd.html">Website Designing</a></li>
+      <li><a href="movie making.html">Movie Making</a></li>
+      <li><a href="it quiz.html">IT Quiz</a></li>
+      <li><a href="photo.html">Photography</a></li>
+      <li><a href="prog.html">Programming</a></li>
+      </ul>
+  </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title"></h6>
+                    <div id="content">
+                        <ul class="timeline">
+                            <li class="event" data-date="Name">
+                                <h3>Webiste Designing</h3>
+                                <p>The competition theme for 2021 is ‘Covid portal’.</p>
+                            </li>
+                            <li class="event" data-date="Link To Register">
+                                <h3><a href="#">webdregd</a> </h3>
+                            </li>
+                            <li class="event" data-date="Rules">
+                                <h3>The website is to be responsive and designed within 5 working days. Work content to be original.</h3>
+                            </li>
+                            <li class="event" data-date="Media">
+                                <h3>Ensure that all content in your website (including footage, music, images, props, etc.) is your own. If you include any copyrighted or trademarked content, you must be able to provide written permission for its use.</h3>
+                            </li>
+                            <li class="event" data-date="Submission">
+                                <h3>All entries must be submitted online (including uploading of the github/hosted link )</h3>
+                            </li>
+                            <li class="event" data-date="Participants">
+                                <h3>Individual/Team</h3>
+
+                            </li>
+                            <li class="event" data-date="Date">
+                                <h3>25th May-30th May</h3>
+                            </li>
+                            <li class="event" data-date="Duration">
+                                <h3>5 day</h3>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
